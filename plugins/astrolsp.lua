@@ -17,6 +17,16 @@ return {
       inlay_hints = false, -- enable/disable inlay hints on start
       semantic_tokens = true, -- enable/disable semantic token highlighting
     },
+    -- https://github.com/neovim/neovim/issues/26520#issuecomment-1887230243
+    capabilities = {
+      vim.tbl_deep_extend("force", vim.lsp.protocol.make_client_capabilities(), {
+        workspace = {
+          didChangeWatchedFiles = {
+            dynamicRegistration = false,
+          },
+        },
+      }),
+    },
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
