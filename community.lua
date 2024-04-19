@@ -24,4 +24,7 @@ return {
 
 	-- motion
 	{ import = "astrocommunity.motion.nvim-surround" },
+
+	-- note-taking
+	{ import = "astrocommunity.note-taking/neorg" },
 }
