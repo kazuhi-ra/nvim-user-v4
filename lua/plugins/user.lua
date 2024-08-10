@@ -114,7 +114,7 @@ return {
 			},
 			custom_highlights = {
 				CursorLine = {
-					bg = "#06154a",
+					bg = "#11225c",
 				},
 			},
 			integrations = {
