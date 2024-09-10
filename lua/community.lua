@@ -20,4 +20,16 @@ return {
 	{ import = "astrocommunity.pack.terraform" },
 
 	{ import = "astrocommunity.pack.lua" },
+
+	-- editing-support
+	{ import = "astrocommunity.editing-support.todo-comments-nvim" },
+	{ import = "astrocommunity.editing-support.vim-move" },
+	{ import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
+  { import = "astrocommunity.editing-support.vim-visual-multi" },
+
+	-- scroll
+	{ import = "astrocommunity.scrolling.nvim-scrollbar" },
+
+	-- motion
+	{ import = "astrocommunity.motion.nvim-surround" },
 }
