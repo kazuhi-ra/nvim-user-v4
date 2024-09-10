@@ -1,23 +1,5 @@
--- -- NeoVimを起動したらNeo-treeを開く
-vim.cmd.Neotree("focus")
+-- This will run last in the setup process and is a good place to configure
+-- things like custom filetypes. This just pure lua so anything that doesn't
+-- fit in the normal config locations above can go here
 
--- patch
-local M = require('astrolsp')
-local original_progress = M.progress
-
-M.progress = function(data)
-  if not data then
-    vim.api.nvim_err_writeln("Error: data is nil in progress function")
-    return
-  end
-  if not data.params then
-    if data.result then
-      data.params = data.result
-    else
-      vim.api.nvim_err_writeln("Error: data.params is nil in progress function")
-      return
-    end
-  end
-
-  original_progress(data)
-end
+vim.cmd.Neotree('focus')
