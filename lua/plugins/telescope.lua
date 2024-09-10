@@ -20,6 +20,7 @@ return {
 					"dist",
 					"package-lock.json",
 					"yarn.lock",
+					"log",
 				},
 				layout_config = {
 					horizontal = {

@@ -10,6 +10,7 @@ return {
 	{ import = "astrocommunity.pack.yaml" },
 	{ import = "astrocommunity.pack.tailwindcss" },
 	{ import = "astrocommunity.pack.typescript" },
+	{ import = "astrocommunity.pack.prisma" },
 	{ import = "astrocommunity.pack.docker" },
 	{ import = "astrocommunity.pack.terraform" },
 
