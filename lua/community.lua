@@ -27,6 +27,9 @@ return {
 	{ import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
   { import = "astrocommunity.editing-support.vim-visual-multi" },
 
+	-- completion
+	{ import = "astrocommunity.completion.copilot-lua-cmp" },
+
 	-- scroll
 	{ import = "astrocommunity.scrolling.nvim-scrollbar" },
 
