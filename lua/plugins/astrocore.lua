@@ -32,6 +32,7 @@ return {
         wrap = false, -- sets vim.opt.wrap
 				foldcolumn = "0",
 				laststatus = 0,
+				fillchars = { eob = " ", diff = "▓" }
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -152,10 +153,16 @@ return {
 					desc = "Previous buffer",
 				},
 				["<C-w>"] = {
+					-- tab2以降にいるときはtabを閉じる
 					function()
-						require("astrocore.buffer").close()
+						local current_tab = vim.fn.tabpagenr()
+						if current_tab == 1 then
+							require("astrocore.buffer").close()
+						else
+							vim.cmd("tabclose")
+						end
 					end,
-					desc = "Close buffer",
+					desc = "Close buffer or tab",
 				},
 			},
 			i = {

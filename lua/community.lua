@@ -30,6 +30,9 @@ return {
 	-- completion
 	{ import = "astrocommunity.completion.copilot-lua-cmp" },
 
+	-- git
+	{ import = "astrocommunity.git.diffview-nvim" },
+
 	-- scroll
 	{ import = "astrocommunity.scrolling.nvim-scrollbar" },
 
