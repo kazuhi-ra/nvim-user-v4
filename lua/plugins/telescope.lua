@@ -26,12 +26,12 @@ return {
 				layout_config = {
 					horizontal = {
 						prompt_position = "top",
-						preview_width = 0.80,
+						preview_width = 0.60,
 					},
 					vertical = {
 						mirror = false,
 					},
-					width = { padding = 0 },
+					width = { padding = 4 },
 					height = 0.94,
 					preview_cutoff = 120,
 				},
