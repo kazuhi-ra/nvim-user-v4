@@ -19,13 +19,14 @@ return {
 	{ import = "astrocommunity.pack.docker" },
 	{ import = "astrocommunity.pack.terraform" },
 
+	{ import = "astrocommunity.pack.ruby" },
 	{ import = "astrocommunity.pack.lua" },
 
 	-- editing-support
 	{ import = "astrocommunity.editing-support.todo-comments-nvim" },
 	{ import = "astrocommunity.editing-support.vim-move" },
 	{ import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
-  { import = "astrocommunity.editing-support.vim-visual-multi" },
+	{ import = "astrocommunity.editing-support.vim-visual-multi" },
 
 	-- completion
 	{ import = "astrocommunity.completion.copilot-lua-cmp" },
